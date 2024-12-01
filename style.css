@@ -1,0 +1,40 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.messageErreur{
+    color: red;
+}
+
+.formulairePourBDProf{
+    margin-top: 5%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: rgb(74, 130, 139);
+    label{
+        color: white;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    h2{
+        text-align: left;
+        color: white;
+    }
+    
+}
+
+#sexe{
+    flex-direction: row;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projet</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="affichageDesErreurs"></div>
+    <div>
+      <form class="formulairePourBDProf">
+          <label for="requete">Votre requête : (trier par)</label>
+            <div>
+                <h2>Année</h2>
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Année BETWEEN 2001 AND 2005 ORDER BY Année ASC;">2001-2005
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Année BETWEEN 2006 AND 2010 ORDER BY Année ASC;">2006-2010
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Année BETWEEN 2011 AND 2015 ORDER BY Année ASC;">2011-2015
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Année BETWEEN 2015 AND 2017 ORDER BY Année ASC;">2015-2017
+            </div>
+            <div>
+                <h2>Genre</h2>
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Sexe LIKE 'Masculin';">Homme
+                <input type="radio" name="requete" value="SELECT Année,Sexe,Commune,Secteur,Effectif, Regroupement FROM ESR WHERE Sexe LIKE 'Feminin';">Femme
+            </div>
+<!--
+          <label for="sexe">Sexe : </label>
+          <div id="sexe">
+            <input type="radio" name="requete" id="" value="SELECT * FROM ESR WHERE sexe LIKE 'Masculin'">Masculin
+            <input type="radio" name="requete" id="" value="SELECT * FROM ESR WHERE sexe LIKE 'Feminin'">Féminin
+            <input type="radio" name="requete" id="" value="SELECT * FROM ESR">Tout
+          </div>
+-->
+
+          
+
+          <button type="submit">Envoyer</button>
+      </form>
+    </div>
+    <div class="affichageBD">
+        <table>
+        </table>
+    </div>
+
+    <script src="/js/gestionFormulaire.js"></script>
+</body>
+</html>
